@@ -1,8 +1,9 @@
-name: Build Android AAB
+name: Build Android AAB and APK
 
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,15 +16,30 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: "temurin"
+          java-version: "17"
 
       - name: Decode keystore
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > keepclone.keystore
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > my-release-key.jks
 
-      - name: Grant Gradle permission
+      - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
-          - name: Build signed APK
-  run: ./gradlew assembleRelease
-  
+
+      - name: Build signed AAB
+        run: ./gradlew bundleRelease
+
+      - name: Build signed APK
+        run: ./gradlew assembleRelease
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-aab
+          path: app/build/outputs/bundle/release/app-release.aab
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: app/build/outputs/apk/release/app-release.apk
