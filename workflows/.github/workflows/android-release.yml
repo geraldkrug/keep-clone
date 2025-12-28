@@ -62,4 +62,3 @@ v2l56/6IXhpMEQqcZQjgnD9P }}" | base64 --decode > keepclone.keystore
         with:
           name: app-release-aab
           path: app/build/outputs/bundle/release/app-release.aab
-          
