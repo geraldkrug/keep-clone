@@ -28,10 +28,8 @@ jobs:
         
       - name: Build signed AAB
         run: ./gradlew bundleRelease
-
       - name: Build signed APK
         run: ./gradlew assembleRelease
-
         - name: List APK outputs
   run: ls -R app/build/outputs 
 
