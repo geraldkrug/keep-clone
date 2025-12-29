@@ -1,6 +1,7 @@
 <manifest package="com.example.keepclone"
 xmlns:android="http://schemas.android.com/apk/res/android">
-
+<uses-permission android:name="android.permission.INTERNET" />
+  
 
 <application
 android:label="Keep Clone"
@@ -15,11 +16,6 @@ android:exported="true">
 <action android:name="android.intent.action.MAIN" />
 <category android:name="android.intent.category.LAUNCHER" />
 </intent-filter>
-  @Override
-protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(android.R.layout.simple_list_item_1);
-}
 </activity>
 
 
