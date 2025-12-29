@@ -32,8 +32,8 @@ jobs:
       - name: Build signed APK
         run: ./gradlew assembleRelease
 
-      - name: List APK outputs
-        run: ls -R app/build/outputs/apk
+      - name: Verify APK exists
+        run: ls -lh app/build/outputs/apk/release/
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4
@@ -41,4 +41,8 @@ jobs:
           name: app-release-aab
           path: app/build/outputs/bundle/release/app-release.aab
 
-      - name: Upload SIGNED APK
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apk
+          path: app/build/outputs/apk/release/*.apk
