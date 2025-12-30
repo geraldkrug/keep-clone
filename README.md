@@ -14,4 +14,11 @@ Use package installer
 If an APK explorer app is installed on your phone
 it will stop the choice to use the Android package installer. Uninstall apk explorer apps.
 
-To stop Google from scanning unknown APKs, you need to disable Google Play Protect's scanning features within the Play Store settings and potentially adjust app permissions for unknown sources
+To stop Google from scanning unknown APKs, you need to disable Google Play Protect's scanning features within the Play Store settings and potentially adjust app permissions for unknown sources.
+
+If you lose your phone before it gets locked
+this app shows my phone number on an icon anywhere 
+you place it on the phone home screen.
+
+Download apk to install here...
+https://g--dk.biz/app-debug.apk
