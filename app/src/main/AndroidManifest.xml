@@ -1,11 +1,11 @@
 <manifest package="com.example.keepclone"
 xmlns:android="http://schemas.android.com/apk/res/android">
-
+<uses-permission android:name="android.permission.INTERNET" />
+  
 
 <application
 android:label="Keep Clone"
-android:icon="@mipmap/ic_launcher"
-android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+android:icon="@mipmap/ic_launcher">
 
 
 <activity
