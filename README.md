@@ -9,3 +9,9 @@ A download of a zipped .apk is generated for user
 to install. On Android phone apk opens and stops and that is all I want it to do. Main use case is I 
 change the home screen icon then generate 
 a new apk for many different reasons. 
+
+Use package installer 
+If an APK explorer app is installed on your phone
+it will stop the choice to use the Android package installer. Uninstall apk explorer apps.
+
+To stop Google from scanning unknown APKs, you need to disable Google Play Protect's scanning features within the Play Store settings and potentially adjust app permissions for unknown sources
