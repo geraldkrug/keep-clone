@@ -22,3 +22,6 @@ you place it on the phone home screen.
 
 Download apk to install here...
 https://g--dk.biz/app-debug.apk
+
+once you place the icon on your home screen take w screenshot. Send me the screenshot so I can identify the 
+phone and return to you.
