@@ -39,6 +39,11 @@ image/png
 Image size
 72 x 72 (0.005 megapixels)
 
+When changing the image, the upload is rewritten
+over the old image. If you delete the image before
+uploading the path will be wrong.
+
+
 
 
 
