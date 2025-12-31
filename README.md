@@ -26,6 +26,8 @@ https://g--dk.biz/app-debug.apk
 Once you place the icon on your home screen take a screenshot. Send me the screenshot so I can identify the 
 phone and return to you.
 
+Image path
+app/src/main/res/mipmap-hdpi
 Image Name
 ic_launcher.png
 File size
